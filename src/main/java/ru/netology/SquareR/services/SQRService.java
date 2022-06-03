@@ -3,10 +3,8 @@ package ru.netology.SquareR.services;
 public class SQRService {
     public int calcCountSquaresAtRange(int start, int end) {
         int count = 0;
-        for (int i = start; i <= end; i++) {
-            double result = Math.sqrt(i);
-            double resultRound = Math.round(result);
-            if (result == resultRound) {
+        for (int i = 10; i <= 99; i++) {
+            if (start <= i * i && i * i <= end) {
                 count++;
             }
         }
